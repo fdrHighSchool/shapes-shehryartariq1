@@ -1,8 +1,18 @@
 import java.util.*;
 
-class Area {
+
+class Main {
 
   public static void main(String[] args) {
+
+    shapes();
+
+  }
+
+
+
+    public static void shapes(){
+
 
 
     Scanner area = new Scanner (System.in);
@@ -39,32 +49,11 @@ class Area {
     }
 
 
-    else (b == 4) {
-	    System.out.println("What's the radius of the circle");
+    else if(b == 4) {
+	  System.out.println("What's the radius of the circle");
 		double radius = area.nextDouble();
-		//System.out.println("what's the value of pi");
-		//int pi = area.nextInt();
-		double area4 = Math.pi* (radius * radius);
-		//int area4 = (22 / 7(radius * radius));
+    double area4 = Math.PI * Math.pow(radius, 2);
 		System.out.println(area4);}
-
-
-
-
-
-
-    }
-
-
-
-
-
-
-
-
-
-
-
-
+  }
 
 }
