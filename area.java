@@ -1,59 +1,64 @@
 import java.util.*;
-
-
-class Main {
+class Area {
 
   public static void main(String[] args) {
 
-    shapes();
+
+    areaSquare();
+    areaTriangle();
+    areaRectangle();
+    areaCircle();
+
+
+    System.out.println(area1);
+    System.out.println(area2);
+    System.out.println(area3);
+    System.out.println(area4);
 
   }
 
 
-
-    public static void shapes(){
-
-
-
-    Scanner area = new Scanner (System.in);
-    System.out.println("Choose type of conversion \n 1.Square  \n 2.Triangle \n 3.Rectangle \n 4.Circle");
-    int b = area.nextInt();
-
-
-    if(b == 1) {
+    public static void areaSquare(){
 
 		System.out.println("Write the side of the square");
 		int side = area.nextInt();
 		int area1 = side * side;
-		System.out.println(area1);
+    return(area1);
+
 	}
 
 
-    else if(b == 2) {
+
+    public static void areaTriangle(){
 		System.out.println("What's the base of the triangle");
 		int base = area.nextInt();
 		System.out.println("What's the height of the triangle");
 		int height = area.nextInt();
 		int area2 = ((base * height)/2);
-		System.out.println(area2);
+    return(area2);
+
 	}
 
 
-    else if(b == 3) {
+
+  public static void areaRectangle(){
 		System.out.println("What's the width of the triangle");
 		int width = area.nextInt();
 		System.out.println("What's the Length of the triangle");
 		int Length = area.nextInt();
 		int area3 = width * Length;
-		System.out.println(area3);
+    return(area3);
+
     }
 
 
-    else if(b == 4) {
+
+    public static void areaCircle(){
 	  System.out.println("What's the radius of the circle");
 		double radius = area.nextDouble();
     double area4 = Math.PI * Math.pow(radius, 2);
-		System.out.println(area4);}
+    return area4;
+	
   }
 
 }
